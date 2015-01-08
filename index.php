@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        //*Lecture 1 examples*
+        //*Lecture 1&2 examples*
        class food{
            public $foodType = " default type";
            public $toppingType = "default topping type";
@@ -41,7 +41,7 @@ and open the template in the editor.
            public $carType = "Car type";
            public $modelType = " Model type";
            public $manufactuer = "Toyota";
-           public $price = 20000;
+           public $price = 2000;
            
            function __construct($title, $carType, $modelType, $maker) {
                $this->carType= $carType;
@@ -84,7 +84,7 @@ and open the template in the editor.
        $Dog1->breedType = "German Shepard           ";
    
        print"The type of the dog is {$Dog1->getType()}";
-       //*end of lecture 1 exapmles*
+       //*end of lecture 1&2 exapmles*
        //-----------------------------------------------------------------------
       
         ?>
