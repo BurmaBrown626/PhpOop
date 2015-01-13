@@ -86,7 +86,7 @@ and open the template in the editor.
        print"The type of the dog is {$Dog1->getType()}";
        //*end of lecture 1&2 exapmles*
        //-----------------------------------------------------------------------
-      
+
         ?>
     </body>
 </html>
