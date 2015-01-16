@@ -10,13 +10,12 @@ class Animal {
     public $bark;
     public $meow;
 
-    function __construct($scientificName, $firstName, $lastName, $gender, $weight) {
+    function __construct($scientificName, $firstName, $lastName, $gender) {
         $this->scientificName = $scientificName;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->gender = $gender;
-        $weight->weight = $weight;
-    
+       
     }
 
 }
@@ -24,14 +23,14 @@ class Animal {
 function getName() {
     return "This is my " . $this->firstName .
             " and last " . $this->lastname;
-            "and this is my scientific-name " . $this->scientificName . " . ";
+            " and this is my scientific-name " . $this->scientificName . " . ";
     
 }
 
 class Cat extends Animal {
 
-       function __construct($scientificName, $firstName, $lastName, $gender, $weight, $meow) {
-        parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
+       function __construct($scientificName, $firstName, $lastName, $gender, $meow) {
+        parent::__construct($scientificName, $firstName, $lastName, $gender);
         $this->meow = $meow;
     }
     function greet() {
@@ -41,8 +40,8 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-  function __construct($scientificName, $firstName, $lastName, $gender, $weight, $bark) {
-        parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
+  function __construct($scientificName, $firstName, $lastName, $gender, $bark) {
+        parent::__construct($scientificName, $firstName, $lastName, $gender);
         $this->bark = $bark;
   }
     function hello() {
